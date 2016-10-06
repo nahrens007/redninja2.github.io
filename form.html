@@ -20,6 +20,7 @@
 
 	<section style="float: left; width: 65%;">
 		<form name="donationForm" id="donationForm">
+
 			<fieldset id="contact">
 				<legend>Contact Information</legend>
 				<label for="fname">First Name</label>
@@ -27,6 +28,7 @@
 				<label for="lname">Last Name</label>
 				<input type="text" name="lname" id="lname" />
 			</fieldset>
+
 			<fieldset id="donation">
 				<legend>Donation Information</legend>
 				<input type="radio" id="freshman" name="class" value="freshman" checked="checked" /> 
@@ -41,15 +43,38 @@
 				<input type="radio" id="senior" name="class" value="senior" />
 				<label for="senior">Senior</label>
 				<br />
+
+				<label for="card">Payment</label>
+				<select name="card" id="card">
+					<option value="Visa">Visa</option>
+					<option value="AmEx">American Express</option>
+					<option value="Payp">Paypal</option>
+					<option value="Deb">Debit</option>
+				</select>
+
+				<input type="checkbox" name="childcare" />
+				<label for="childcare">Child Care</label>
+
+				<input type="checkbox" name="healthcare" />
+				<label for="healthcare">Healthcare</label>
+
+				<input type="checkbox" name="elderly" />
+				<label for="elderly">Elderly</label>
 			</fieldset>
+
 			<fieldset id="feedback">
 				<legend>Feedback</legend>
+
+				<textarea id="comments" name="comments" rows="10" cols="75" wrap="soft"></textarea>
 			</fieldset>
+
+			<input type="submit" name="submit" />
+			<input type="reset" name="reset" />
 		</form>
 	</section>
 
 	<aside style="color: green; float:left; width: 33%; border: 1px ridge red; padding: 5px;">
-		
+
 		<h2>Information</h2>
 		<p>
 			Any information you enter on this form is not used by the server
