@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8" />
+	<title>Web Form</title>
+	<link href="default.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body bgcolor="white" text="black" style="margin: 0px auto; padding: 0px; width: 98%; max-width: 960px; min-width: 600px;">
+
+	<header><h1 align="center">Form</h1></header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+		</ul>
+	</nav>
+	<hr />
+
+	<section style="float: left; width: 65%;">
+		<form name="donationForm" id="donationForm">
+			<fieldset id="contact">
+				<legend>Contact Information</legend>
+				<label for="fname">First Name</label>
+				<input type="text" name="fname" id="fname" />
+				<label for="lname">Last Name</label>
+				<input type="text" name="lname" id="lname" />
+			</fieldset>
+			<fieldset id="donation">
+				<legend>Donation Information</legend>
+				<input type="radio" id="freshman" name="class" value="freshman" checked="checked" /> 
+				<label for="freshman">Freshman</label>
+				<br />
+				<input type="radio" id="sophomore" name="class" value="sophomore" />
+				<label for="sophomore">Sophomore</label>
+				<br />
+				<input type="radio" id="junior" name="class" value="junior" />
+				<label for="junior">Junior</label>
+				<br />
+				<input type="radio" id="senior" name="class" value="senior" />
+				<label for="senior">Senior</label>
+				<br />
+			</fieldset>
+			<fieldset id="feedback">
+				<legend>Feedback</legend>
+			</fieldset>
+		</form>
+	</section>
+
+	<aside style="color: green; float:left; width: 33%; border: 1px ridge red; padding: 5px;">
+		
+		<h2>Information</h2>
+		<p>
+			Any information you enter on this form is not used by the server
+			for any malicious use. 
+		</p>
+	</aside>
+	<footer style="border-top: 1px solid black; width: 100%; clear: left;">
+		<address align="center">
+			nahrens@ashland.edu &bull; (440) 830-1666
+		</address>
+	</footer>
+</body>
+</html>
