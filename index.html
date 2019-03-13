@@ -1,122 +1,59 @@
-<!DOCTYPE html>
-<html>
-<head>
 
-	<meta charset="UTF-8" />
-	<title>Progress Defined</title>
-	<link href="default.css" rel="stylesheet" type="text/css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Index</title>
+  <meta charset="utf-8">
+
+  <link rel='icon' type='image/ico' href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px;}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      /*background-color: #f1f1f1;*/
+      height: 100%;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
 
 </head>
+<body>
 
-<body bgcolor="white" text="black" style="margin: 0px auto; padding: 0px; width: 98%; max-width: 960px; min-width: 600px;">
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
 
-	<header><h1 align="center">Progress</h1></header>
-	<nav>
-		<ul>
-			<li><a href="form.html">Form</a></li>
-		</ul>
-	</nav>
-	<hr />
+    </div>
+    <div class="col-sm-8 text-left">
+			<img src="/star-wars-logo.jpg" />
+    </div>
+    <div class="col-sm-2 sidenav">
 
-	<article style="float: left; width: 65%;">
+    </div>
+  </div>
+</div>
 
-		<p>At its most basic level, <em>progress</em> is the transition from one stage of work to another.</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-		<h2>Requirements</h2>
-		<p>Work. Progress requires hard and constant work in order to fully transition from one stage of development to another.</p>
-
-		<h2>Rewards</h2>
-		<p>
-			Depending on what progress is related to, there may be different rewards for each stage that you complete.
-		</p>
-		<p>
-			For example: if you were to be weeding your flower garden (or vegetable garden), which is loaded with weeds to the
-			point that you can't even see the flowers/vegetables, your work would likely become noticeable after a very short amount of time. 
-			After seeing the <i>progress</i> that you have already accomplished, you would likely become more encouraged and determined
-			to finish the job.
-		</p>
-		<h3>Feelings</h3>
-		<p>Quite often, you will often have feelings concerning the progress which you continue to make on progress. Some of the most common feelings are:</p>
-		<ul type="disk">
-			<li>Excitement</li>
-			<li>Determination</li>
-			<li>A sense of accomplishment (if that can be concidered a feeling)</li>
-			<li>Successful</li>
-			<li>Happiness</li>
-			<li>Joyfulness</li>
-		</ul>
-		<p>The list could go on; these are only some of the immediate rewards of progress.</p>
-
-		<img src="star-wars-logo.jpg" alt="The Star Wars logo" width="200px" style="border: 3px double red;" />
-
-	</article>
-
-	<aside style="color: green; float:left; width: 33%; border: 1px ridge red; padding: 5px;">
-		<h1>Nathan Ahrens</h1>
-		<hr size="1px" width="200px" align="center" noshade="noshade" />
-
-		<h2>About Me</h2>
-		<p>
-			My name is <b>Nathan Ahrens</b>. I am a student at <i>Ashland University</i> studying Computer Science. 
-			I am minoring in Information Systems.
-		</p>
-
-		<h3>Hobbies</h3>
-		<p>Hobbies I enjoy include:
-			<ul type="square">
-				<li>Programming</li>
-				<li>Basketball</li>
-				<li>Video games</li>
-			</ul>
-			There may be more but those are the most immediate.
-		</p>
-
-		<h3>Favorite Movies</h3>
-		<ol type="I">
-			<li>Star Wars</li>
-			<ol type="A">
-				<li>Episode IV</li>
-				<li>Episode V</li>
-				<li>Episode VI</li>
-				<li>Episode III</li>
-				<li>Episode II</li>
-				<li>Episode VII</li>
-				<li>Episode I</li>				
-			</ol>
-			<li>Lord of the Rings (Hobbit series included)</li>
-			<li>Jason Bourne series</li>
-			<li>The Avengers series</li>
-			<li>Captian America series</li>
-			<li>Thor series</li>
-			<li>The Matrix series</li>
-		</ol>
-
-		<h3>Favorite Quote</h3>
-		<blockquote>
-			Life is hard; its harder when you're stupid.<br />
-			<cite>John Wayne</cite>
-		</blockquote>
-
-		<h3>School</h3>
-		<p>Classes I'm in this semester include:</p>
-		<dl>
-			<dt>Computer Science 175</dt>
-			<dd>A class teaching students how to develop web pages and web sites.</dd>
-			<dt>Computer Science 230</dt>
-			<dd>A class teaching students necessary skills to develop advanced computer programs.</dd>
-			<dt>Computer Science 435</dt>
-			<dd>A class teaching students the basics of cyber security.</dd>
-			<dt>Communication 101</dt>
-			<dd>A class that attempts to show students how to best communicate with fellow humans.</dd>
-			<dt>Information Systems 221</dt>
-			<dd>A class teaching students basic technological skills.</dd>
-		</dl>
-
-	</aside>
-	<footer style="border-top: 1px solid black; width: 100%; clear: left;">
-		<address align="center">
-			nahrens@ashland.edu &bull; (440) 830-1666
-		</address>
-	</footer>
 </body>
 </html>
