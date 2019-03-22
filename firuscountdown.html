@@ -47,13 +47,12 @@
     <div id="bodycontent">
         <div class="panel panel-default">
             <div class="panel-body">
-                <h2>Firis Leaves</h2>
-                <h2 id="commencement"></h2>
+                <h2>Zero-day Virus</h2>
+                <h1>Firis Leaving</h1>
             </div>
         </div>
         <hr />
-        <h2>Countdown:</h2>
-        <h1 id="countdown"></h1>
+        <h1 id="countdown" class="pulsate"></h1>
     </div>
 
     </div>
@@ -90,9 +89,6 @@
   // Display the result in the element with id="demo"
   $('#countdown').html(days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ");
-  $('#commencement').html((commencement.getMonth() + 1) + "/" + commencement.getDate()
-      + "/" + commencement.getFullYear() + " " + checkTime(commencement.getHours())
-      + ":" + checkTime(commencement.getMinutes()) + ":" + checkTime(commencement.getSeconds()));
 
   // If the count down is finished, write some text
   if (distance < 0) {
@@ -122,6 +118,19 @@ function checkTime(i) {
 	    font-size: 80px;
 	    font-size: 8vw;
 	}
+  .pulsate {
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes pulsate {
+      0% {
+          color: red;
+      }
+      
+      100% {
+          color: black;
+      }
+  }
 </style>
 
 </body>
